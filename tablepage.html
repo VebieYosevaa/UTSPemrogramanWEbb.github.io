@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datapage</title>
+    <link rel="stylesheet" href="tablestyle.css">
+</head>
+<body>
+    <div class="sidebar">
+        <header>Menu</header>
+            <li><a href="homepage.html"></i> Beranda</a></li>
+            <li><a href="formulirpage.html"></i>Formulir</a></li>
+            <li><a href="tablepage.html"></i>Tabel</a></li>
+            <li><a href="#">Persyaratan</a></li>
+            <li><a href="#">Kontak</a></li>
+    </div>
+
+    <div class="utama">
+    <header>
+        <nav class="navbar">
+            <li><a href="homepage.html">Beranda</a></li>
+            <li><a href="formulirpage.html">Formulir</a></li>
+            <li><a href="#">Organigram</a></li>
+            <li><a href="#">Kegiatan</a></li>
+            <li><a href="#">Hubungi</a></li>
+        </nav>
+    <nav class="atas">
+    <img src="logosm.jpeg" height="50" width="200">
+    <div class="panel">
+        <h1> Universitas SM</h1>
+        <p> Kelas Seni Universitas SM</p>
+    </div>
+    </nav>
+    </header>
+
+    <div class="daftar">
+    <div class="data">
+       <h1> Data Mahasiswa</h1> 
+    <table class="table" border="1" id="datamhs">
+        <tr>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Program Studi</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Jenis Kelamin</th>
+            <th>Tanggal Lahir</th>
+            <th>Alamat</th>
+        </tr>
+        <tr class="odd">
+            <td> Vebie</td>
+            <td> 121140016</td>
+            <td> Teknik Informatika </td>
+            <td> vebie@gmail.com</td>
+            <td> biecakep</td>
+            <td> Perempuan</td>
+            <td> 01/24/2004</td>
+            <td> Jl.idup</td>
+        </tr>
+        <tr class="even">
+            <td> Alex</td>
+            <td> 121123564</td>
+            <td> Ilmu Politik </td>
+            <td> Alexander23@gmail.com</td>
+            <td> 2Anderlex3</td>
+            <td> Laki- Laki</td>
+            <td> 02/05/2003</td>
+            <td> Jl. Medan</td>
+        </tr>
+        <tr class="odd">
+            <td> Desi</td>
+            <td> 119450012</td>
+            <td> Matematika</td>
+            <td> desicantik25@gmail.com</td>
+            <td> 2005D3s1</td>
+            <td> Perempuan</td>
+            <td> 12/01/2002</td>
+            <td> Jl. Pahlawan</td>
+        </tr>
+        <tr class="even">
+            <td> Jessi</td>
+            <td> 118123401</td>
+            <td> Desain Komunikasi Visual </td>
+            <td> DKVJessi111@gmail.com</td>
+            <td> anakart</td>
+            <td> Perempuan</td>
+            <td> 04/23/2005</td>
+            <td> Jl. Laguboti</td>
+        </tr>
+        <tr class="odd">
+            <td> Bian</td>
+            <td> 121147001</td>
+            <td> Arsitektur</td>
+            <td> BianAska@gmail.com</td>
+            <td> Abian98KA</td>
+            <td> Laki- Laki</td>
+            <td> 12/27/2004</td>
+            <td> Jl. Merdeka</td>
+        </tr>
+    </table>    
+    </div> 
+    </div>
+    <footer class="footer">
+        <p> Vebie Yoseva @ 2023</p>
+    </footer>
+</div>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    if(urlParams.has("nama")) {
+        const nama = urlParams.get("nama");
+        const nim = urlParams.get("nim");
+        const prodi = urlParams.get("prodi");
+        const email = urlParams.get("email");
+        const Password = urlParams.get("Password")
+        const jk = urlParams.get("jk");
+        const ttl = urlParams.get("ttl");
+        const alamat = urlParams.get("alamat");
+
+        const datamhs = document.getElementById("datamhs");
+
+        const newRow = datamhs.insertRow(1);
+
+        const namaCell = newRow.insertCell(0);
+        const nimCell = newRow.insertCell(1);
+        const prodiCell = newRow.insertCell(2);
+        const emailCell = newRow.insertCell(3);
+        const PasswordCell = newRow.insertCell(4)
+        const jkCell = newRow.insertCell(5);
+        const ttlCell = newRow.insertCell(6);
+        const alamatCell = newRow.insertCell(7);
+
+        namaCell.innerHTML = nama;
+        nimCell.innerHTML = nim;
+        prodiCell.innerHTML = prodi;
+        emailCell.innerHTML = email;
+        PasswordCell.innerHTML = Password;
+        jkCell.innerHTML = jk;
+        ttlCell.innerHTML = ttl;
+        alamatCell.innerHTML = alamat;
+      }
+</script>
+</body>
+</html>

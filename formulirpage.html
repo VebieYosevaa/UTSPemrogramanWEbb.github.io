@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formpage</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <div class="sidebar">
+        <header>Menu</header>
+            <li><a href="homepage.html"></i> Beranda</a></li>
+            <li><a href="formulirpage.html"></i>Formulir</a></li>
+            <li><a href="tablepage.html"></i>Tabel</a></li>
+            <li><a href="#">Persyaratan</a></li>
+            <li><a href="#">Kontak</a></li>
+    </div>
+
+    <div class="utama">
+    <header>
+        <nav class="navbar">
+            <li><a href="homepage.html">Beranda</a></li>
+            <li><a href="formulirpage.html">Formulir</a></li>
+            <li><a href="#">Organigram</a></li>
+            <li><a href="#">Kegiatan</a></li>
+            <li><a href="#">Hubungi</a></li>
+        </nav>
+    <nav class="atas">
+    <img src="logosm.jpeg" height="50" width="200">
+    <div class="panel">
+        <h1> Universitas SM</h1>
+        <p> Kelas Seni Universitas SM</p>
+    </div>
+    </nav>
+    </header>
+    <div class="Formulir">
+    <section class="container">
+    <header> Formulir Pendaftaran </header>
+    <form action="tablepage.html" method="get" class="form">
+        <div class="input-box">
+            <label for="nama">Nama </label>
+            <input type="text" id="nama" name="nama" required><br>
+        </div>
+        <div class="input-box">
+            <label for="nim">NIM</label>
+            <input type="text" id="nim" name="nim" required><br>
+        </div>
+        <div class="input-box">
+            <label for="prodi">Program Studi </label>
+            <input type="text" id="prodi" name="prodi" required><br>
+        </div>
+        <div class="input-box">
+            <label for="email">Email </label>
+            <input type="email" id="email" name="email" required><br>
+        </div>
+        <div class="input-box">
+            <label for="Password">Password</label>
+            <input type="text" id="Password" name="Password" required><br>
+            </div>
+        <div class="jk-box">
+            <label form="jk"> Jenis Kelamin</label>
+        <div class="jk">
+            <input type="radio" id="check-lk" name="jk" for="check-lk" value="Laki- Laki" required> Laki-Laki</label>
+        </div>
+        <div class="jk">
+            <input type="radio" id="check-pr" name="jk" for="check-pr" value="Perempuan" required> Perempuan</label>
+        </div>
+        </div>
+        <div class="input-box">
+            <label for="ttl"> Tangal Lahir</label>
+            <input type="date" id="ttl" name="ttl" required><br>
+        </div>
+        <div class="input-box">
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat" required></textarea><br>
+        </div>
+            <input type="submit" value="SUBMIT">
+    </form></div>
+    </section>
+    <footer class="footer">
+        <p> Vebie Yoseva @ 2023</p>
+    </footer>
+</div>
+</div>
+    
+</body>
+</html>
